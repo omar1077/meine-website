@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, deeppink, green);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;               /* Zentriert den Text */
+    padding: 20px;                    /* Innenabstand rundherum */
+    color: #ffd700;                   /* Goldene Schriftfarbe */
+    font-family: 'Arial', sans-serif;/* Schönere Schriftart, falls noch nicht gesetzt */
+    font-weight: 700;                 /* Fettgedruckt */
+    font-size: 3rem;                  /* Große Schriftgröße (anpassbar) */
+    letter-spacing: 2px;              /* Etwas mehr Abstand zwischen Buchstaben */
+    text-transform: uppercase; /* Alle Buchstaben groß */
+    box-shadow:  black ;
+    text-shadow:
+             -5px -2px 0 black,
+              5px -2px 0 black,
+             -5px  2px 0 black,
+              2px  2px 0 black;}
+
+.bild-mit-text {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.bild-mit-text img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.ueber-text {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: yellow;
+    padding: 20px;
+    max-width: 500px;
+    line-height: 1.6;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.tabelle {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #222;
+    color: white;
+}
+
+table, th, td {
+    border: 2px solid #ffd700;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #00ffff;
+}
+.Bild {
+    position: relative;
+    background-image: url("img_2.png");
+    background-size: cover;
+    background-position: left;
+    color: yellow;
+    font-size: x-large;
+}
+
+.Bild::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 150px;
+    background-image: url("Mohamed.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #ffd700;      /* goldene Linie als Rahmen */
+    border-radius: 20px;            /* schön abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* leichter Schatten */
+}
